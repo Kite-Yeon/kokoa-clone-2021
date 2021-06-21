@@ -10,6 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* screens */
 @import "screens/login.css";
@@ -18,13 +19,14 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/thanksalot.css";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  height: 1000vh;
+  height: 500vh;
   font-family: "Open Sans", sans-serif;
   color: #2f363e;
 }

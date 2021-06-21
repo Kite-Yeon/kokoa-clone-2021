@@ -15,3 +15,47 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+
+@keyframes ringIcon {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotateZ(50deg);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: rotateZ(-50deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes clickMe {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: skewX(50);
+  }
+  50% {
+    transform: scale(3);
+  }
+  75% {
+    transform: skewX(50);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.settings__setting:hover i {
+  animation: ringIcon 1s ease-in-out;
+}
+
+.click-me:hover {
+  animation: clickMe 1s ease-in-out;
+}
